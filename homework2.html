@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            var checkBox = document.getElementById("myCheck");
+            var text = document.getElementById("text");
+
+            if (checkBox.checked == true){
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+}
+        function myFunction2() {
+                    var clikehere = document.getElementById("myClick");
+                    var text2 = document.getElementById("text2");
+
+                    if (clikehere.checked == true){
+                        text2.style.display = "block";
+                    } else {
+                        text2.style.display = "none";
+                    }
+        }
+    </script>
+</head>
+<body>
+    
+    Checkbox: <input type="checkbox" id="myCheck" onclick="myFunction()">
+    <p id="text" style="display:none">This one is checked!</p>
+
+    Clickhere: <input type="checkbox" id="myclick" onclick="myFunction2()">
+    <p id="text2" style="display:none">This is the second one!</p>
+</body>
+</html>
